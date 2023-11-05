@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./../index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>        
+    
+    <header class="main">
+      <nav id="primary-nav" aria-label="Main">
+        <div class="logo-container">
+          <a href="/" class="logo-holder">
+            <img
+              class="logo"
+              src="./../Bilder/last ned.png"
+              alt="Homepage"
+              aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene slo, etterfulgt av de store bokstavene MET satt sammen i svart."
+            />
+          </a>
+        </div>
+        <a href="#" class="skip-main">Skip to Content(Hit enter)</a> <!--Husk tabindex -1 på tekst-->
+        <button id="hamburger" aria-expanded="false">
+         <span>Menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </button>
+        <div class="main-nav">
+          <ul class="navcontainer">
+            <li>
+              <a href="#" aria-current="page">Home </a>
+            </li>
+              <li>
+                <a href="#">Library</a>
+              </li>
+              <li>
+                <a href="#">Topical</a>
+              </li>
+              <li>
+                <a href="#">Tilgjengelighet</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="quote">
+         <img class="image" src="./../Bilder/last ned (1).jpg" alt="Beskrivende tekst for bildet">
+      </section>
+      <section class="quote">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam itaque! Consequuntur, asperiores modi!</p>
+          <span>John Doe</span>
+      </section>
+      <section class="quote">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam itaque! Consequuntur, asperiores modi!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, adipisci sequi optio porro dolorem, consequatur quas repellendus harum, mollitia tempora necessitatibus minus. Dicta cupiditate dolorem repudiandae tempore nemo illo iusto.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci laudantium reprehenderit omnis quod inventore velit, aliquid consequuntur enim nobis quos eos quis, iure, officia veritatis ab error sapiente dolorem quam.</p>
+          <span>John Doe</span>
+      </section>
+      <section class="quote">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam itaque! Consequuntur, asperiores modi!</p>
+          <span>John Doe</span>
+      </section>
+      <section class="quote">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam itaque! Consequuntur, asperiores modi!</p>
+        <span>John Doe</span>
+      </section>
+  </main>
+    <script src="/index.js" defer></script>
+  </body>
+</html>
