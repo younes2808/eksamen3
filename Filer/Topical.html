@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <title>Topicalside - Eksamen</title>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="./../index.css" />
 
@@ -16,19 +16,19 @@
   <body>        
     
     <header class="main">
-      <nav id="primary-nav" aria-label="Main">
+      <nav id="primary-nav">
         <div class="logo-container">
           <a href="/" class="logo-holder">
             <img
               class="logo"
               src="./../Bilder/last ned.png"
-              alt="Homepage"
+              alt="OsloMET logo"
               aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene slo, etterfulgt av de store bokstavene MET satt sammen i svart."
             />
           </a>
         </div>
         <a href="#content" class="skip-main">Skip to Content(Hit enter)</a> <!--Husk tabindex -1 på tekst-->
-        <button id="hamburger" aria-expanded="false">
+        <button id="hamburger" aria-expanded="false" aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
          <span>Menu</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +69,10 @@
         Svært populære datingsplattformen Tinder tar i bruk maskinlæring for å
         tilpasse “matches” til det brukeren er interessert i (<a
           href="https://www.tinder.com"
+          role="link"
           target="_blank"
           title="Går til tinder nettsiden"
+          aria-label="Link som går til Tinder nettsiden."
           >Tinder, 2022</a
         >). På grunn av dette fungerer dating som et spill, og det har blitt
         dannet en “Tinderkultur” som følge av teknologien. Dette er et eksempel
@@ -100,19 +102,26 @@
       id="hjernebilde"
         src="./../Bilder/MicrosoftTeams-image.png"
         alt="Maskinlæring vist fram ved bruk av et bilde av en hjerne."
+        aria-label="Maskinlæring vist fram ved bruk av et bilde av en hjerne. Innsiden av hjernen er vist med en teknologisk illustrasjon. "
       />
       <p>
         Bildet er tatt av
         <a
           href="https://pixabay.com/no/users/gdj-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1751201"
           target="_blank"
+          role="link"
           title="Gå til Gordon Johnson"
+          aria-label="Lenke som henviser deg til hjemmesiden i pixabay til forfatteren Gordon Johnson "
           >Gordon Johnson</a
         >
         fra
         <a
           
           href="https://pixabay.com/no/vectors/anatomi-biologi-hjerne-tenkte-sinn-1751201/"
+          target="_blank"
+          role="link"
+          title="Gå til pixabay"
+          aria-label="Lenke til nettsiden Pixabay"
           >Pixabay</a
         >
       </p>
@@ -147,6 +156,9 @@
         <a
           href="https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching"
           target="_blank"
+          role="link"
+          title="Gå til Tinder kilden til denne nettsiden."
+          aria-label="Lenke til Tinder kilden som ble brukt i denne nettsiden."
         >
           https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching</a
         >
