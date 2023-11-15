@@ -353,7 +353,6 @@ aside img {
     padding: 1em 10%;
     border: none;
   }
-
   .navigation {
     grid-area: navigation;
     justify-content: center;
