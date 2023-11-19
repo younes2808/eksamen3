@@ -1,10 +1,11 @@
+/*CSS-en gjelder alle elementer i body*/
 body {
   margin: 0;
   font-family: 'Verdana';
   background: whitesmoke;
 }
 
-/*CSS for bilder i innhold*/
+/*CSS for bilder i nettsiden*/
 
 #hjernebilde{
  margin-bottom: -15%;
@@ -14,7 +15,7 @@ body {
   margin-bottom: 10%;
  }
 
-
+/*CSS for bilder i main tag med id="content"*/
 #content img {
   margin-top: 5%;
   grid-template-rows: auto auto;
@@ -25,6 +26,8 @@ body {
   height: 75%;
   justify-self: center;
 }
+
+/*CSS for bildet på forsiden / index.html*/
 .Main-picture {
   margin: 0;
   width: 100%; /* Ensure the image takes the full width of the container */
@@ -33,23 +36,28 @@ body {
   text-align: center;
   border-radius: 15px;
 }
+
+/*CSS for overskrift. Sørger for at overskriften er sentrert*/
 #overskrift {
   text-align: center;
 }
 
-/*Fonter*/
+/*Font for nettsiden*/
 @font-face {
   src: url("./poppins.ttf");
   font-family: "Poppins";
 }
-
+/*CSS for a-tag*/
 a {
   text-decoration: none;
 }
+/*CSS for navbar*/
 .navcontainer {
   max-width: 1400px;
   margin: auto;
 }
+
+/*CSS for skip knapp*/
 a.skip-main {
   left:-999px;
   position:absolute;
@@ -59,6 +67,8 @@ a.skip-main {
   overflow:hidden;
   z-index:1;
 }
+
+/*CSS for skip knapp når den er synlig*/
 a.skip-main:focus, a.skip-main:active {
   color: #fff;
   background-color:#000;
@@ -74,6 +84,8 @@ a.skip-main:focus, a.skip-main:active {
   text-align:center;
   font-size:1.2em;
 }
+
+/*CSS til nav-bar, container classen og ul som tilhører navbar*/
 #primary-nav {
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -98,7 +110,8 @@ a.skip-main:focus, a.skip-main:active {
   list-style-type: none;
 }
 
-
+/*Media queries. Endrer egenskaper og størrelser på ulike elementer basert på bredden til nettsiden, målt i pixler.
+Alle elementene innenfor media-taggen har følgende egenskaper dersom minimumsbredden til nettsiden er 848 px*/
 @media (min-width: 848px) {
   #primary-nav ul {
     display: grid;
@@ -184,6 +197,9 @@ a.skip-main:focus, a.skip-main:active {
     display: block;
  }
 }
+
+/*Alle elementene innenfor media-taggen har følgende egenskaper dersom maksimumsbredden til nettsiden er 847 px.
+Dette fører til at nettsidens "oppskrift endrer seg når skjermbredden går fra 848px til 847px eller mindre."*/
 @media (max-width: 847px) {
   #primary-nav ul {
     display: flex;
@@ -248,6 +264,8 @@ ul {
   margin-bottom: 3%;
   background-color: white;
 }
+
+/*CSS til klassen "main-content" som tilhører main tagen i library.html*/
 .main-content {
   box-sizing: border-box;
   font-family: "Graphik", -apple-system, BlinkMacSystemFont, avenir next, avenir,
@@ -263,6 +281,7 @@ ul {
     "navigation  summary";
 }
 
+/*CSS til frame-selection, h1 og p i library.html*/
 .frame-selection {
   grid-area: frame-selection;
   height: 100%;
@@ -282,10 +301,12 @@ ul {
   color: #57534e;
 }
 
+/*CSS for div "item-options"*/
 .item-options {
   display: flex;
 }
 
+/*CSS for figuret i div-en "item-options"*/
 .artwork-preview {
   margin:0;
 }
@@ -293,10 +314,11 @@ ul {
   border: 1px solid #000000;
 }
 
+/*CSS for aside tagen som tilhører informasjonen som vises på siden i library.html*/
 aside {
   -ms-grid-row: 1 / 3;
   -ms-grid-column: 2 / 3;
-  grid-area: summary;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -318,28 +340,24 @@ aside img {
   margin-top: 1em;
 }
 
+/*Alle elementene innenfor media-taggen har følgende egenskaper dersom maksimumsbredden til nettsiden er 640 px*/
 @media screen and (max-width: 640px) {
   .main-content {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
       "frame-selection"
-      "summary"
       "navigation";
   }
   .frame-selection{
       padding-right: 0;
       border-right: 0;
+      border-bottom: 0.1em solid black;
   }    
   .item-options {
     flex-direction: column;
   }
 
-  .summary {
-    grid-area: summary;
-    padding: 1em 10%;
-    border: none;
-  }
 }
 
 
