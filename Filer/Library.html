@@ -1,99 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bibliotekside - Eksamen</title>
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./../index.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-  </head>
-  <body>        
-    <header class="main">
-      <nav id="primary-nav" aria-label="Main">
-        <div class="logo-container">
-          <a href="/" class="logo-holder">
-            <img
-              class="logo"
-              src="./../Bilder/last-ned.png"
-              alt="Homepage"
-              aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene slo, etterfulgt av de store bokstavene MET satt sammen i svart."
-            />
-          </a>
-        </div>
-        <a href="#content" class="skip-main">Skip to Content(Hit enter)</a> <!--Husk tabindex -1 på tekst-->
-        <button id="hamburger" aria-expanded="false" aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
-         <span>Menu</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewbox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </button>
-        <div class="main-nav">
-          <ul class="navcontainer">
-            <li>
-              <a href="./../index.html" >Home </a>
-            </li>
-              <li>
-                <a href="./Library.html" aria-current="page">Bibliotek</a>
-              </li>
-              <li>
-                <a href="./Topical.html">Topical</a>
-              </li>
-              <li>
-                <a href="./Tilgjengelighet.html">Tilgjengelighet</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-        <main class="main-content" id="content">
-          <section class="frame-selection">
-            <h1>Biblioteket</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus dignissimos iusto, facilis fuga laborum tenetur soluta corporis, illum sint eveniet totam dolor alias? Ad recusandae deleniti rerum dolor modi.</p>
-            <div class="item-options">
-              <figure class="artwork-preview">
-                <!-- Benjamin A. Ward (April. 22, 2022). Bibliotek [Bilde av Bibliotek i OsloMET ]. OsloMET. https://foto.oslomet.no/fotoweb/archives/5007-Arkitektur-ved-OsloMet/Folder%2052/biblioteket-kjeller_5889830061_o.jpg.info#c=%2Ffotoweb%2Farchives%2F5007-Arkitektur-ved-OsloMet%2F%3Fq%3Dbibliotek -->
-                <img src="./../Bilder/bibliotek2.jpg" alt="Dette er et bilde av et av mange bibliotek i OsloMET. Vi ser et åpent bibliotek med mange bokhyller." aria-label="Dette er et bilde av et av mange bibliotek i OsloMET. Vi ser et åpent bibliotek med mange bokhyller.">
-              </figure>
-              <p class="frame-details">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elis, architecto ipsa perferendis asperiores ex consequatur voluptatibus quisquam corrupti ducimus officiis qui tempore, dolores, est cum debitis commodi enim necessitatibus saepe.
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa facere est tempore voluptates, culpa quidem ad in eius delectus soluta perferendis numquam itaque obcaecati cum sed laborum modi harum?
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ut asperiores possimus tenetur iste, nostrum magni odio ex velit repudiandae, eius, vero sequi amet! Ut odio dignissimos quo maiores vero.
-             psum dol
-            </p>
-            </div>
+<head>
+  <!-- Metainformasjon om dokumentet -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tittelen på dokumentet -->
+  <title>Bibliotekside - Eksamen</title>
+  <!-- Importerer stilarket for denne siden -->
+  <link rel="stylesheet" href="./../index.css" />
+  <!-- Importerer Google-fonten Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+</head>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam magnam tenetur, consectetur omnis error nesciunt quaerat tempore expedita unde, eos nobis! Ducimus saepe nam aliquid omnis dolores exercitationem ut?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus quaerat quod! Esse officiis aspernatur nisi ullam sequi maiores nobis provident nostrum? Accusantium ab id ad eius repellendus explicabo maxime.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa at perspiciatis adipisci ducimus praesentium, velit hic natus? Natus dicta hic, in expedita eveniet ex vitae, atque sequi iusto iste at.
-            </p>
-          </section>
-        
-        <aside>
-          <h2>Historien til biblioteket</h2>
-          
-       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem provident reprehenderit at ipsum laboriosam repudiandae velit nihil earum deserunt debitis dolorem aperiam perferendis tempora placeat blanditiis consequatur nulla, molestiae necessitatibus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur qui itaque, optio doloremque aliquam ullam laudantium! Asperiores numquam nulla voluptate repudiandae veritatis aliquam eius, laboriosam, nesciunt quia molestias quos.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod, rerum debitis illo voluptas minus ipsa aut commodi reiciendis provident a distinctio ab animi quasi repudiandae, temporibus recusandae fugit consequuntur.
+<body>
+  <!-- Hovedheaderen -->
+  <header class="main">
+    <!-- Hovednavigasjonselementet -->
+    <nav id="primary-nav" aria-label="Main">
+      <!-- Logo-container -->
+      <div class="logo-container">
+        <a href="/" class="logo-holder">
+          <img class="logo" src="./../Bilder/last-ned.png" alt="Homepage"
+            aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene slo, etterfulgt av de store bokstavene MET satt sammen i svart." />
+        </a>
+      </div>
+      <!-- Lenke for å hoppe over hovedinnholdet for skjermlesere -->
+      <a href="#content" class="skip-main">Skip to Content(Hit enter)</a> <!--Husk tabindex -1 på tekst-->
+      <!-- Hamburgerknapp for mobilmeny -->
+      <button id="hamburger" aria-expanded="false"
+        aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
+        <span>Menu</span>
+        <!-- SVG-ikon for hamburgerknappen -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <!-- Hovednavigasjon med lenker til andre sider -->
+      <div class="main-nav">
+        <ul class="navcontainer">
+          <li>
+            <a href="./../index.html">Home </a>
+          </li>
+          <li>
+            <!-- Aktiv side, bruker aria-current attributtet -->
+            <a href="./Library.html" aria-current="page">Bibliotek</a>
+          </li>
+          <li>
+            <a href="./Topical.html">Topical</a>
+          </li>
+          <li>
+            <a href="./Tilgjengelighet.html">Tilgjengelighet</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Hovedinnhold i nettstedet -->
+  <main class="main-content" id="content">
+    <!-- Seksjon for rammevalg med hovedoverskrift -->
+    <section class="frame-selection">
+      <h1>Biblioteket</h1>
+      <!-- Avsnitt med tekst og bilde -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus dignissimos iusto, facilis fuga laborum
+        tenetur soluta corporis, illum sint eveniet totam dolor alias? Ad recusandae deleniti rerum dolor modi.
+      </p>
+      <div class="item-options">
+        <!-- Figur med forhåndsvisning av kunstverk -->
+        <figure class="artwork-preview">
+          <!-- Bildekilde -->
+          <!-- Benjamin A. Ward (April. 22, 2022). Bibliotek [Bilde av Bibliotek i OsloMET ]. OsloMET. https://foto.oslomet.no/fotoweb/archives/5007-Arkitektur-ved-OsloMet/Folder%2052/biblioteket-kjeller_5889830061_o.jpg.info#c=%2Ffotoweb%2Farchives%2F5007-Arkitektur-ved-OsloMet%2F%3Fq%3Dbibliotek -->
+          <img src="./../Bilder/bibliotek2.jpg"
+            alt="Dette er et bilde av et av mange bibliotek i OsloMET. Vi ser et åpent bibliotek med mange bokhyller."
+            aria-label="Dette er et bilde av et av mange bibliotek i OsloMET. Vi ser et åpent bibliotek med mange bokhyller.">
+        </figure>
+        <!-- Avsnitt med detaljer -->
+        <p class="frame-details">
+          <!-- Langt avsnitt med detaljert informasjon -->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elis, architecto ipsa perferendis asperiores ex
+          consequatur voluptatibus quisquam corrupti ducimus officiis qui tempore, dolores, est cum debitis commodi enim
+          necessitatibus saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa facere est tempore voluptates, culpa
+          quidem ad in eius delectus soluta perferendis numquam itaque obcaecati cum sed laborum modi harum?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ut asperiores possimus tenetur iste, nostrum
+          magni odio ex velit repudiandae, eius, vero sequi amet! Ut odio dignissimos quo maiores vero.
+          psum dol
+        </p>
+      </div>
+      <!-- Kort avsnitt etter bilde og detaljer -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam magnam tenetur, consectetur omnis error
+        nesciunt quaerat tempore expedita unde, eos nobis! Ducimus saepe nam aliquid omnis dolores exercitationem ut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus quaerat quod! Esse officiis
+        aspernatur nisi ullam sequi maiores nobis provident nostrum? Accusantium ab id ad eius repellendus explicabo
+        maxime.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa at perspiciatis adipisci ducimus praesentium,
+        velit hic natus? Natus dicta hic, in expedita eveniet ex vitae, atque sequi iusto iste at.
+      </p>
+    </section>
 
-       </p>
-       <p> 
-        Lorem, ipsconsectetur adipisicing elit. Ea, laborum veniam. Commodi quis exercitationem molestiae, dolorum, modi mollitia nobis quae culpa eaque obcaecati optio eos sunt repellendus eveniet impedit enim.
-       </p>
-        </aside>
-      </main>
-    <script src="./../index.js" defer></script>
-  </body>
+    <!-- Sidekolonne (aside) med historieinformasjon -->
+    <aside>
+      <h2>Historien til biblioteket</h2>
+
+      <!-- Langt avsnitt med historisk informasjon -->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem provident reprehenderit at ipsum laboriosam
+        repudiandae velit nihil earum deserunt debitis dolorem aperiam perferendis tempora placeat blanditiis
+        consequatur nulla, molestiae necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur qui itaque, optio doloremque aliquam
+        ullam laudantium! Asperiores numquam nulla voluptate repudiandae veritatis aliquam eius, laboriosam, nesciunt
+        quia molestias quos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod, rerum debitis illo voluptas minus ipsa aut
+        commodi reiciendis provident a distinctio ab animi quasi repudiandae, temporibus recusandae fugit consequuntur.
+      </p>
+      <p>
+        <!-- Kort avsnitt etter historisk informasjon -->
+        Lorem, ipsconsectetur adipisicing elit. Ea, laborum veniam. Commodi quis exercitationem molestiae, dolorum, modi
+        mollitia nobis quae culpa eaque obcaecati optio eos sunt repellendus eveniet impedit enim.
+      </p>
+    </aside>
+  </main>
+  <!-- Importerer JavaScript-filen med utsatt (defer) lasting -->
+  <script src="./../index.js" defer></script>
+</body>
+
 </html>

@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tilgjengelighetside - Eksamen</title>
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./../index.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-  </head>
-  <body>        
-    
-    <header class="main">
-      <nav id="primary-nav" aria-label="Main">
-        <div class="logo-container">
-          <a href="/" class="logo-holder">
-            <img
-              class="logo"
-              src="./../Bilder/last-ned.png"
-              alt="Homepage"
-              aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene slo, etterfulgt av de store bokstavene MET satt sammen i svart."
-            />
-          </a>
-        </div>
-        <a href="#content" class="skip-main">Skip to Content(Hit enter)</a> <!--Husk tabindex -1 på tekst-->
-        <button id="hamburger" aria-expanded="false" aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
-         <span>Menu</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewbox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </button>
-        <div class="main-nav">
-          <ul class="navcontainer">
-            <li>
-              <a href="./../index.html" >Home </a>
-            </li>
-              <li>
-                <a href="./Library.html">Bibliotek</a>
-              </li>
-              <li>
-                <a href="./Topical.html" aria-current="page">Topical</a>
-              </li>
-              <li>
-                <a href="./Tilgjengelighet.html">Tilgjengelighet</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-     <!-- Hovedseksjon -->
+<head>
+  <!-- Metainformasjon om dokumentet -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tittelen på dokumentet -->
+  <title>Tilgjengelighetside - Eksamen</title>
+  <!-- Importerer stilarket for denne siden -->
+  <link rel="stylesheet" href="./../index.css" />
+  <!-- Importerer Google-fonten Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Hovedheaderen -->
+  <header class="main">
+    <!-- Hovednavigasjonselementet -->
+    <nav id="primary-nav" aria-label="Main">
+      <!-- Logo-container -->
+      <div class="logo-container">
+        <a href="/" class="logo-holder">
+          <img class="logo" src="./../Bilder/last-ned.png" alt="Homepage"
+            aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene slo, etterfulgt av de store bokstavene MET satt sammen i svart." />
+        </a>
+      </div>
+      <!-- Lenke for å hoppe over hovedinnholdet for skjermlesere -->
+      <a href="#content" class="skip-main">Skip to Content(Hit enter)</a>
+      <!-- Hamburgerknapp for mobilmeny -->
+      <button id="hamburger" aria-expanded="false"
+        aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
+        <span>Menu</span>
+        <!-- SVG-ikon for hamburgerknappen -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <!-- Hovednavigasjon med lenker til andre sider -->
+      <div class="main-nav">
+        <ul class="navcontainer">
+          <li>
+            <a href="./../index.html">Home </a>
+          </li>
+          <li>
+            <a href="./Library.html">Bibliotek</a>
+          </li>
+          <li>
+            <a href="./Topical.html" aria-current="page">Topical</a>
+          </li>
+          <li>
+            <a href="./Tilgjengelighet.html">Tilgjengelighet</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Hovedseksjon -->
   <main class="intro" id="content">
 
     <!-- Overskrift 1 -->
@@ -65,24 +65,14 @@
 
     <!-- Tekstavsnitt -->
     <p>
-      Vi har nøye gjennomført tilgjengelighetstester ved hjelp av <a
-      href="https://achecks.org/checker/"
-      target="_blank"
-      title="Gå til AChecker"
-      aria-label="Lenke som henviser deg til nettsiden AChecker"
-      >AChecker</a>, <a
-      href="https://wave.webaim.org/"
-      target="_blank"
-      title="Gå til Wave"
-      aria-label="Lenke som henviser deg til nettsiden Wave"
-      >Wave</a>, 
-      og validering av koden på <a
-      href="https://validator.w3.org/"
-      target="_blank"
-      title="Gå til validator"
-      aria-label="Lenke som henviser deg til nettsiden validator"
-      >Validator</a> for å sikre at vår nettside overholder de høyeste 
-      standardene for tilgjengelighet. Disse testene er av avgjørende betydning for å garantere en 
+      Vi har nøye gjennomført tilgjengelighetstester ved hjelp av <a href="https://achecks.org/checker/" target="_blank"
+        title="Gå til AChecker" aria-label="Lenke som henviser deg til nettsiden AChecker">AChecker</a>, <a
+        href="https://wave.webaim.org/" target="_blank" title="Gå til Wave"
+        aria-label="Lenke som henviser deg til nettsiden Wave">Wave</a>,
+      og validering av koden på <a href="https://validator.w3.org/" target="_blank" title="Gå til validator"
+        aria-label="Lenke som henviser deg til nettsiden validator">Validator</a> for å sikre at vår nettside overholder
+      de høyeste
+      standardene for tilgjengelighet. Disse testene er av avgjørende betydning for å garantere en
       positiv brukeropplevelse for alle, uavhengig av funksjonshemninger.
     </p>
 
@@ -91,59 +81,50 @@
 
     <!-- Tekstavsnitt -->
     <p>
-      AChecker gir oss et omfattende bilde av tilgjengelighetsproblemer på nettsiden, inkludert aspekter 
-      som kontrastforhold og korrekt bruk av ARIA-attributter. Vi har systematisk adressert hver identifiserte 
+      AChecker gir oss et omfattende bilde av tilgjengelighetsproblemer på nettsiden, inkludert aspekter
+      som kontrastforhold og korrekt bruk av ARIA-attributter. Vi har systematisk adressert hver identifiserte
       utfordring for å sikre full tilgjengelighet på alle deler av nettsiden.
     </p>
-    <img
-        src="./../Bilder/A3.png"
-        alt="Skjermbilde av resultatet basert på testen som den utførte på nettsiden AChecker."
-        aria-label="Skjermbilde av resultatet basert på testen som den utførte på nettsiden AChecker. Det er ingen error / problem ifølge AChecker."
-      />
+    <img src="./../Bilder/A3.png"
+      alt="Skjermbilde av resultatet basert på testen som den utførte på nettsiden AChecker."
+      aria-label="Skjermbilde av resultatet basert på testen som den utførte på nettsiden AChecker. Det er ingen error / problem ifølge AChecker." />
     <!-- Overskrift 2 -->
     <h2>2. WAVE Checker Resultat:</h2>
 
     <!-- Tekstavsnitt -->
     <p>
-      WAVE Checker har vært essensiell for å identifisere og løse tilgjengelighetsproblemer knyttet til 
+      WAVE Checker har vært essensiell for å identifisere og løse tilgjengelighetsproblemer knyttet til
       vår HTML- og CSS-kode. Vi har forsikret oss om at all tekst er klar og forståelig, at interaktive
-       elementer er tilgjengelige via tastatur, og at kontrastnivået tilfredsstiller kravene for personer med synshemninger.
+      elementer er tilgjengelige via tastatur, og at kontrastnivået tilfredsstiller kravene for personer med
+      synshemninger.
     </p>
-    <img
-    src="./../Bilder/WAVE.png"
-    alt="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Wave."
-    aria-label="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Wave. Det er ingen error / problem ifølge Wave. "
-  />
+    <img src="./../Bilder/WAVE.png" alt="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Wave."
+      aria-label="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Wave. Det er ingen error / problem ifølge Wave. " />
     <!-- Overskrift 2 -->
     <h2>3. Validator Resultat:</h2>
 
     <!-- Tekstavsnitt -->
     <p>
-      Validator har bekreftet at vår kode er i samsvar med HTML-standarden. Vi har nøye håndtert advarselen 
-      om å unngå mellomrom i bildelenker for å sikre en feilfri visning på ulike nettlesere og enheter. Dette reflekterer 
+      Validator har bekreftet at vår kode er i samsvar med HTML-standarden. Vi har nøye håndtert advarselen
+      om å unngå mellomrom i bildelenker for å sikre en feilfri visning på ulike nettlesere og enheter. Dette
+      reflekterer
       vårt engasjement for å levere en enhetlig opplevelse for alle brukere.
     </p>
 
-    <img
-    id="validator"
-    src="./../Bilder/error.png"
-    alt="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Validator."
-    aria-label="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Validator. Vi fikk en error / feilmelding på grunn av mellomrom i filnavnet til bildet."
-  />
+    <img id="validator" src="./../Bilder/error.png"
+      alt="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Validator."
+      aria-label="Skjermbilde av resultatet basert på testen som den utførte på nettsiden Validator. Vi fikk en error / feilmelding på grunn av mellomrom i filnavnet til bildet." />
     <!-- Overskrift 2 -->
     <h2>4. Kode med Feil (Validator Advarsel):</h2>
 
     <!-- Tekstavsnitt -->
     <p>
       Bildet som viser Validator advarselen illustrerer vårt forpliktende arbeid med å rette opp og forbedre feil.
-       Vi anerkjenner betydningen av en feilfri kodebase for å sikre en sømløs opplevelse for alle besøkende.
+      Vi anerkjenner betydningen av en feilfri kodebase for å sikre en sømløs opplevelse for alle besøkende.
     </p>
-   
-    <img
-    src="./../Bilder/kode.png"
-    alt="Bilde av vår html kode der vi bytter navn på filen."
-    aria-label="Bilde av vår html kode der vi bytter navn på filen."
-  />
+
+    <img src="./../Bilder/kode.png" alt="Bilde av vår html kode der vi bytter navn på filen."
+      aria-label="Bilde av vår html kode der vi bytter navn på filen." />
 
     <!-- Overskrift 2 -->
     <h2>Tilgjengelighetshensyn i Designvalgene:</h2>
@@ -151,7 +132,7 @@
     <!-- Tekstavsnitt -->
     <p>
       Vår designprosess har vært preget av et sterkt fokus på tilgjengelighet. Vi har implementert flere
-       sentrale tiltak for å sikre at vår nettside er tilgjengelig for alle.
+      sentrale tiltak for å sikre at vår nettside er tilgjengelig for alle.
     </p>
 
     <!-- Underoverskrift -->
@@ -160,26 +141,28 @@
     <!-- Tekstavsnitt -->
     <p>
       For å lette navigasjonen for brukere som er avhengige av tastaturer, har vi inkludert en "Skip to Content"
-       knapp. Dette gir en effektiv snarvei til hovedinnholdet, noe som sparer tid og forbedrer brukeropplevelsen.
+      knapp. Dette gir en effektiv snarvei til hovedinnholdet, noe som sparer tid og forbedrer brukeropplevelsen.
     </p>
     <!-- Underoverskrift -->
     <h3>ARIAs Rolle Attributter:</h3>
     <!-- Tekstavsnitt -->
     <p>
       Nøye bruk av ARIA rolleattributter, som "main" og "img", gir klare indikasjoner til skjermlesere om strukturen
-       og betydningen av elementene på nettsiden.
+      og betydningen av elementene på nettsiden.
     </p>
     <!-- Underoverskrift -->
     <h3>Bruk av størrelser:</h3>
     <!-- Tekstavsnitt -->
     <p>
-      Vi har valgt tilgjengelige størrelser, som <code>em</code> og <code>rem</code>, med tanke på flere enheter. Dette sikrer at størrelser er proporsjonale og tilpasses brukerens preferanser og enhetens skjermstørrelse
+      Vi har valgt tilgjengelige størrelser, som <code>em</code> og <code>rem</code>, med tanke på flere enheter. Dette
+      sikrer at størrelser er proporsjonale og tilpasses brukerens preferanser og enhetens skjermstørrelse
     </p>
     <!-- Avsluttende tekstavsnitt -->
     <p>
       Gjennom våre designvalg og tilgjengelighetstiltak sikrer vi at nettsiden vår er lett tilgjengelig for alle.
     </p>
   </main>
-    <script src="./../index.js" defer></script>
-  </body>
+  <script src="./../index.js" defer></script>
+</body>
+
 </html>

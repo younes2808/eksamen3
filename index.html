@@ -1,80 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hjemmeside - Eksamen</title>
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./index.css" />
+<!DOCTYPE html> <!-- Definerer dokumenttypen og versjonen av HTML -->
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-      
-    />
-  </head>
-  <body>        
-    <header class="main">
-      <nav id="primary-nav" aria-label="Main">
-        <div class="logo-container">
-          <a href="/" class="logo-holder">
-            <img
-              class="logo"
-              src="./Bilder/last-ned.png"
-              alt="OsloMET logo"
-              aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene s, l og o, etterfulgt av de store bokstavene M, E, og T satt sammen i svart."
-            />
-          </a>
-        </div>
-        <a href="#overskrift" class="skip-main">Skip to Content(Hit enter)</a> <!--Husk tabindex -1 på tekst-->
-        <button id="hamburger" aria-expanded="false" aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
-         <span>Menu</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewbox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </button>
-        <div class="main-nav">
-          <ul class="navcontainer">
-            <li>
-              <a href="./index.html" aria-current="page">Home </a>
-            </li>
-              <li>
-                <a href="./Filer/Library.html">Bibliotek</a>
-              </li>
-              <li>
-                <a href="./Filer/Topical.html">Topical</a>
-              </li>
-              <li>
-                <a href="./Filer/Tilgjengelighet.html">Tilgjengelighet</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="container">
-      <figure>
-        <img
-        src="./Bilder/P1160425.jpg" 
-        class="Main-picture"
-        alt="Bilde av osloMET campus på Pilestredet"
-        aria-label="Her har du et bilde av campusen til OsloMET, som ligger på Pilestredet."
-      /> <!--Mina K. Abrahamsen.. (2023). Byggning P46 [Bilde av OsloMET ]. OsloMET. https://foto.oslomet.no/fotoweb/archives/5007-Arkitektur-ved-OsloMet/Folder%2052/P1160425.jpg.info-->
-      </figure>
-      <section class="intro">
-        <h1 id="overskrift">Velkommen til OsloMET - Storbyuniversitet</h1>
-          <p>
-            OsloMET, tidligere kjent som Høgskolen i Oslo og Akershus (HiOA), er kjent for sin mangfoldige studentpopulasjon og et bredt spekter av studieprogrammer innen helse, lærerutdanning, samfunnsfag, teknologi og kunstfag. 
-            Vi er stolte av å si at Universitetet har et betydelig antall studenter og ansatte som jobber sammen for å fremme utdanning og forskning. 
-            OsloMET har flere studiesteder spredt rundt i Oslo og Akershus. 
-            På bildet ser du hovedcampusen som ligger på Pilestredet i Oslo. </p>       
-      </section>
+<html lang="en"> <!-- Angir språket for dokumentet -->
+
+<head>
+  <meta charset="utf-8" /> <!-- Angir tegnsettet til UTF-8 for riktig tekstkoding -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Angir IE-versjon for Edge-modus -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Angir visningsinnstillingene for enheter med ulike skjermstørrelser -->
+  <title>Hjemmeside - Eksamen</title> <!-- Angir tittelen på nettstedet -->
+  <link rel="stylesheet" href="./index.css" /> <!-- Importerer stilarket for nettstedet -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <!-- Importerer Google-fonten Roboto -->
+</head>
+
+<body> <!-- Åpning av kroppselementet -->
+
+  <header class="main"> <!-- Definisjon av hovedheaderen -->
+    <nav id="primary-nav" aria-label="Main"> <!-- Definisjon av hovednavigasjonen med ARIA-attributter -->
+      <div class="logo-container">
+        <a href="/" class="logo-holder">
+          <img class="logo" src="./Bilder/last-ned.png" alt="OsloMET logo" aria-label="OsloMet logo: En stor O, etterfulgt av de små bokstavene s, l og o, etterfulgt 
+            av de store bokstavene M, E, og T satt sammen i svart." />
+        </a>
+      </div>
+      <a href="#overskrift" class="skip-main">Skip to Content(Hit enter)</a>
+      <!-- Lenke for å hoppe over hovedinnholdet for skjermlesere -->
+      <button id="hamburger" aria-expanded="false"
+        aria-label="Trykk på denne knappen for å bli henvist til hovedinnholdet.">
+        <span>Menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <div class="main-nav">
+        <ul class="navcontainer">
+          <li>
+            <a href="./index.html" aria-current="page">Home </a> <!-- Hjem-lenke med nåværende side-status -->
+          </li>
+          <li>
+            <a href="./Filer/Library.html">Bibliotek</a>
+          </li>
+          <li>
+            <a href="./Filer/Topical.html">Topical</a>
+          </li>
+          <li>
+            <a href="./Filer/Tilgjengelighet.html">Tilgjengelighet</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container"> <!-- Definisjon av hovedinnholdet i nettstedet -->
+    <figure>
+      <img src="./Bilder/P1160425.jpg" class="Main-picture" alt="Bilde av osloMET campus på Pilestredet"
+        aria-label="Her har du et bilde av campusen til OsloMET, som ligger på Pilestredet." />
+      <!--Mina K. Abrahamsen.. (2023). Byggning P46 [Bilde av OsloMET ]. OsloMET. https://foto.oslomet.no/fotoweb/archives/5007-Arkitektur-ved-OsloMet/Folder%2052/P1160425.jpg.info-->
+      <!-- Figur-element med et bilde og tilhørende beskrivelse -->
+    </figure>
+    <section class="intro"> <!-- Seksjon for introduksjonen til nettstedet -->
+      <h1 id="overskrift">Velkommen til OsloMET - Storbyuniversitet</h1> <!-- Overskrift for introduksjonen -->
+      <p>
+        OsloMET, tidligere kjent som Høgskolen i Oslo og Akershus (HiOA), er kjent for sin mangfoldige studentpopulasjon
+        og et bredt spekter av studieprogrammer innen helse, lærerutdanning, samfunnsfag, teknologi og kunstfag.
+        Vi er stolte av å si at Universitetet har et betydelig antall studenter og ansatte som jobber sammen for å
+        fremme utdanning og forskning.
+        OsloMET har flere studiesteder spredt rundt i Oslo og Akershus.
+        På bildet ser du hovedcampusen som ligger på Pilestredet i Oslo.
+      </p>
+    </section>
   </main>
-    <script src="./index.js" defer></script>
-  </body>
+
+  <script src="./index.js" defer></script> <!-- Importerer JavaScript-filen med utsatt (defer) lasting -->
+</body>
+
 </html>
