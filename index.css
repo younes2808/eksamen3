@@ -203,7 +203,7 @@ Dette fører til at nettsidens "oppskrift endrer seg når skjermbredden går fra
 @media (max-width: 847px) {
   #primary-nav ul {
     display: flex;
-    flex-direction: column; /* Display the menu items vertically */
+    flex-direction: column; /* Vise elementene i navbaren vertikalt */
   }
 
   a.skip-main:focus, a.skip-main:active {
@@ -211,8 +211,8 @@ Dette fører til at nettsidens "oppskrift endrer seg når skjermbredden går fra
    }
 
   #primary-nav ul li {
-    margin-right: 6%; /* Remove any horizontal spacing between items */
-    margin-bottom: 20px; /* Add vertical spacing between items */
+    margin-right: 6%; /* Ta bort horisontal mellomrom mellom elementer */
+    margin-bottom: 20px; /* Legger til vertikal mellomrom mellom elementene */
   }
   .container {
     grid-template-columns: repeat(1, minmax(15.625rem, 1fr));
@@ -360,6 +360,18 @@ aside img {
 
 }
 
+/*Endrer egenskapene til "skip to main" knappen slik at den passer med mindre skjermbredde*/
+@media (max-width: 380px) { 
+
+  a.skip-main:focus, a.skip-main:active {
+    left: -13%;
+    width: 30%;
+    height: 10%;
+    top: 15%;
+    font-size:0.90em;
+   }
+
+}
 
 
 
